@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sertifikaty</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300italic,400,500,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href="style/fancybox.css" rel="stylesheet" media="all">
+    <link href="style/screen.css" rel="stylesheet" media="all">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <link href="style/ie8.css" rel="stylesheet" media="all">
+    <![endif]-->
+
+
+  </head>
+  <body>
+
+        <!-- Modal -->
+    <div class="modal fade" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback-modal-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+            <h4 class="modal-title" id="feedback-modal-label">Написать нам</h4>
+          </div>
+          <div class="modal-body">
+            <form >
+              <div class="form-group">
+                <label for="name">Имя</label>
+                <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+              </div>
+              <div class="form-group">
+                <label for="phone">Номер телефона</label>
+                <input type="tel" class="form-control" id="phone" placeholder="+7 (777) 777-77-77">
+              </div>
+              <div class="form-group form-group-email">
+                <label for="email">E-mail<b>*</b></label>
+                <input type="email" class="form-control" id="email" placeholder="Введите ваш электронный адрес" required>
+              </div>
+              <div class="form-group form-group-message">
+                <label for="message">Сообщение<b>*</b></label>
+                <textarea class="form-control" rows="3" id="message" placeholder="Текст сообщения" required></textarea>
+              </div>
+              <button type="submit" class="btn-red-modal ">Заказать</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            Мы гарантируем 100% конфиденциальность ваших данных
+          </div>
+        </div>
+      </div>
+    </div><!--end  Modal -->
+
+        <!-- Modal -->
+    <div class="modal fade" id="feedback-garant-modal" tabindex="-1" role="dialog" aria-labelledby="feedback-modal-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+            <h4 class="modal-title">Активация талона</h4>
+          </div>
+          <div class="modal-body">
+            <form >
+              <div class="form-group">
+                <label for="client-tel">Ваш номер телефона:</label>
+                <input type="tel" class="form-control" id="client-tel">
+              </div>
+              <div class="form-group">
+                <label for="number-client">ID талона</label>
+                <input type="tel" class="form-control" id="number-client">
+              </div>
+              <div class="form-group">
+                <label >Обстоятельства повреждения</label>
+                <select class="custom-sf">
+                  <option>При движении на трассе</option>
+                  <option>При движении на трассе 2</option>
+                  <option>При движении на трассе 3</option>
+                </select>
+                
+              </div>
+              <div class="form-group">
+                <label for="message2">Коментарий</label>
+                <textarea class="form-control" rows="3" id="message2" placeholder="Текст сообщения"></textarea>
+              </div>
+              <button type="submit" class="btn-white-modal ">Активировать</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div><!--end  Modal -->
+
+    <div class="wrapper">
+  
+      <header>
+        <div class="header-inner">  
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                  <a href="#" class="logo-link"></a>
+                </div>
+                <div class="col-xs-3">
+                  <p class="bp-info">федеральная сеть автостекольных <br>станций</p>
+                </div>
+                <div class="col-xs-3">
+                  <form class="form-city">
+                    <label>Ваш город:</label>
+                    <select class="custom">
+                      <option>Чебоксары</option>
+                      <option>Санкт-Петербург</option>
+                      <option>Москва</option>
+                    </select>
+                  </form>
+                </div>
+                <div class="col-xs-3 feedback-top">
+                  <span class="tel">8-800-333-88-80</span>
+                  <p class="feedback-link">
+                    <a href="#" class="call-link" data-toggle="modal" data-target="#feedback-modal">Заказать звонок</a>
+                    <a href="#" class="mail-link" data-toggle="modal" data-target="#feedback-modal">Написать нам</a>
+                  </p>
+                </div>
+            </div><!-- end row-->
+          </div><!-- end container-->
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">компания</a></li>
+            <li class="active"><a href="#" class="nav-link">услуги</a></li>
+            <li><a href="#" class="nav-link">полезные статьи</a></li>
+            <li><a href="#" class="nav-link">адреса центров</a></li>
+          </ul>
+          <a href="#" class="talon-link" data-toggle="modal" data-target="#feedback-garant-modal">
+            активировать гарантийный талон
+          </a>
+        </nav>  
+      </header>
+
+
+      <div class="middle ">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-2 ">
+              <div class="sidebar">
+                <ul class="list-sidebar">
+                  <li><a href="#" class="link">Компания</a></li>
+                  <li><a href="#" class="link">Новости</a></li>
+                  <li><a href="#" class="link active">Сертификаты</a></li>
+                  <li><a href="#" class="link">Партнеры</a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-xs-10">
+
+              <div class="content">
+                <ul class="breadcrumbs">
+                  <li><a href="#" class="link">Главная</a></li>
+                  <li><a href="#" class="link active"></a></li>
+                </ul>
+               
+                  <h1>Сертификаты</h1>
+
+                  <p>Вы можете скачать и распечатать сертификаты, представленные ниже. На станции обслуживания отдайте сертификат мастеру и получите скидку в указанном размере.
+                  </p>
+
+                  <ul class="sertifikat-list">
+
+                    <li><a class="fancybox" rel="group" href="i/sertifikat-1.jpg"><img src="i/sertifikat-1.jpg" alt="" /></a></li>
+                    <li><a class="fancybox" rel="group" href="i/sertifikat-2.jpg"><img src="i/sertifikat-2.jpg" alt="" /></a></li>
+                    <li><a class="fancybox" rel="group" href="i/sertifikat-3.jpg"><img src="i/sertifikat-3.jpg" alt="" /></a></li>
+                  </ul>
+                  <div class="line-one line-g" data-scroll-speed="4"></div>
+                  <div class="line-two line-g" data-scroll-speed="4"></div>
+                  <div class="line-three line-g left-deg" data-scroll-speed="4"></div>
+                  <div class="line-four line-g left-deg" data-scroll-speed="4"></div>
+              </div><!-- end content -->
+            </div>
+          </div>
+        </div>
+
+
+      </div><!-- end middle -->
+
+   
+    </div><!-- end wrapper -->
+
+    <footer id="footer">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-xs-4">
+              <a href="#"><img src="i/logo-2.png" alt=""></a>
+              <p class="bp-info-bottom">© Bitstop - 2014<br>
+                Федеральная сеть автостекольных станций.<br>
+                <a href="#" class="link-map">Карта сайта</a>
+              </p>
+            </div>
+            <div class="col-xs-8">
+               <ul class="nav-list-bottom">
+                  <li><a href="#" class="nav-bottom-link">компания</a></li>
+                  <li><a href="#" class="nav-bottom-link">услуги</a></li>
+                  <li><a href="#" class="nav-bottom-link">полезные статьи</a></li>
+                  <li><a href="#" class="nav-bottom-link">адреса центров</a></li>
+              </ul>
+              <p class="order-call-bottom">
+                8-800-333-88-80<br>
+                <a href="#" data-toggle="modal" data-target="#feedback-modal" class="call-link">заказать звонок</a>
+                <a href="#" class="uplab-link"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+    </footer><!-- end footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/fancy-custom.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/placeholder.min.js"></script>
+    <script src="js/SelectBox.js"></script>
+    <script src="js/bitstop.js"></script>
+        <script>
+      // To test the @id toggling on password inputs in browsers that don’t support changing an input’s @type dynamically (e.g. Firefox 3.6 or IE), uncomment this:
+      // $.fn.hide = function() { return this; }
+      // Then uncomment the last rule in the <style> element (in the <head>).
+      $(function() {
+        // Invoke the plugin
+        $('input, textarea').placeholder();
+        // That’s it, really.
+        // Now display a message if the browser supports placeholder natively
+        var html;
+        
+        if (html) {
+          $('<p class="note">' + html + '</p>').insertAfter('form');
+        }
+      });
+    </script>
+  </body>
+</html>

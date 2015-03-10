@@ -1,0 +1,80 @@
+.pagination
+  margin-top: 55px
+  text-align: center
+  li
+    text-transform: uppercase
+    display: inline-block
+    text-align: center
+    margin: 0 7px
+    width: 35px
+    height: 35px
+    @include transition(all linear .3s)
+    &:hover
+      .page-link
+        color: #ed1c24
+  li.active
+    border: 2px solid #21232d
+    .page-link
+      color: #ed1c24
+      text-decoration: none
+  li.left
+    width: 180px
+    border: 2px solid #97979e
+    float: left  
+    margin: 0
+  li.right
+    width: 180px
+    border: 2px solid #97979e
+    float: right  
+    margin: 0
+  .link
+    color: #55555d
+    display: block
+    font: 11px/30px 'gotham_proregular', sans-serif 
+    @include transition(all linear .3s)
+  .page-link
+    color: #21232d
+    display: block
+    text-decoration: underline
+    margin: 0 7px
+    font: 15px/30px 'gotham_probold', sans-serif 
+    @include transition(all linear .3s) 
+
+
+.pagination-news li.left,
+.pagination-news li.right
+  width: 130px
+
+.pagination li.left a:before
+  content: ''
+  display: inline-block
+  margin-right: 13px
+  border-style: solid
+  border-width: 4.5px 7px 4.5px 0
+  border-color: transparent #000000 transparent transparent
+  @include transition(all linear .3s)
+
+.pagination li.left:hover a:before
+  border-color: transparent #ed1c24 transparent transparent
+
+.pagination li.right a:after
+  content: ''
+  display: inline-block
+  margin-left: 13px
+  border-style: solid
+  border-width: 4.5px 0 4.5px 7px
+  border-color: transparent transparent transparent #000000
+  @include transition(all linear .3s)
+
+.pagination li.right:hover a:after
+  border-color: transparent transparent transparent #ed1c24
+
+.pagination li.right:hover,
+.pagination li.left:hover
+  border-color: #ed1c24
+  .link
+    color: #ed1c24
+
+.pagination-news-bottom
+  padding-top: 40px
+  border-top: 2px solid #bdbdc3

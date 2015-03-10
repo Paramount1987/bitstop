@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sotrudniki</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300italic,400,500,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href="style/screen.css" rel="stylesheet" media="all">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <link href="style/ie8.css" rel="stylesheet" media="all">
+    <![endif]-->
+
+
+  </head>
+  <body>
+
+        <!-- Modal -->
+    <div class="modal modal-form-register fade" id="talon-modal" tabindex="-1" role="dialog" aria-labelledby="feedback-modal-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+            <h4 class="modal-title" id="feedback-modal-label">Талон</h4>
+            <h3>№1а654923</h3>
+          </div>
+          <div class="modal-body">
+              <div class="form-register">
+                  <form >
+                    <div class="form-group">
+                      <label>Выберите номер вашего сервиса</label>
+                      <select class="custom-sf">
+                        <option>Регион</option>
+                        <option>Регион 2</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                        <option>Регион 3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="FIO">ФИО клиента</label>
+                      <input type="text" class="form-control" id="FIO" value="Петров Иван Иванович">
+                    </div>
+                    <div class="form-group form-group-email">
+                      <label for="email-client">E-mail клиента</label>
+                      <input type="email" class="form-control" id="email-client" value="petrov@mail.ru">
+                    </div>
+                    <div class="form-group">
+                      <label for="year">Год выпуска авто</label>
+                      <input type="text" class="form-control" id="year" value="2003">
+                    </div>
+                    <div class="form-group">
+                      <label for="auto">Гос. номер авто</label>
+                      <input type="text" class="form-control" id="auto" value="а566 вк 177">
+                    </div>
+                    <div class="form-group">
+                      <label for="date">Дата изготовления стекла</label>
+                      <input type="text" class="form-control" id="date" value="16.02.2013">
+                    </div>
+                    <div class="form-group">
+                      <label>Прикрепить документ</label>
+                      <div class="file-wrap"><span>Выбрать файл</span><input type="file" class="form-control" id="file"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="option">Дополнительные опции на стекле</label>
+                      <input type="text" class="form-control" id="option" value="тонировка">
+                    </div>
+                    <div class="form-group">
+                      <label for="agc">Код AGC</label>
+                      <input type="text" class="form-control" id="agc">
+                    </div>
+                    <div class="form-group">
+                      <label for="model">Марка и модель автомобиля</label>
+                      <input type="text" class="form-control" id="model" value="Subaru">
+                    </div>
+                    <div class="form-group">
+                      <label for="tel-client">Номер телефона клиента</label>
+                      <input type="tel" class="form-control" id="tel-client" value="+7 959 965 56 56">
+                    </div>
+
+                    <button type="submit" class="btn-red">Сохранить</button>
+                    <button type="submit" class="btn-black" data-dismiss="modal" aria-label="Close">Закрыть</button>
+                  </form>
+              </div>    
+          </div>
+          <div class="modal-footer">
+            <a href="#">Удалить запись</a>
+          </div>
+        </div>
+      </div>
+    </div><!--end  Modal -->
+
+        <!-- Modal -->
+    <div class="modal fade" id="authorization" tabindex="-1" role="dialog" aria-labelledby="feedback-modal-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close-modal" data-dismiss="modal" aria-label="Close"></button>
+            <h4 class="modal-title">Авторизация</h4>
+
+          </div>
+          <div class="modal-body">
+            <p>Введите свои данные для доступа к сервису</p>
+            <form >
+              <div class="form-group">
+                <label for="login">Логин</label>
+                <input type="text" class="form-control" id="login">
+              </div>
+              <div class="form-group">
+                <label for="password">Пароль</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <button type="submit" class="btn-white-modal ">Войти</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div><!--end  Modal -->
+
+    <div class="wrapper workers-wrap">
+  
+      <header>
+        <div class="header-inner">  
+          <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                  <a href="#" class="logo-link"></a>
+                <div class="form-talon">
+                  <div class="form-header"></div>
+                  <form>
+                    <h3>Проверка талона</h3>
+                    <div class="form-group">
+                      <label for="id-talon">Введите номер (ID) талона</label>
+                      <input type="text" class="form-control" id="id-talon">
+                    </div>
+
+                    <button type="button" class="btn-black" data-toggle="modal" data-target="#talon-modal">Проверить талон</button>
+                  </form>
+                  <div class="form-footer"></div>
+                </div>
+                </div>
+
+                <div class="col-xs-9 ">
+                  <p class="pull-right user-in">Здравствуйте, user! <a href="#" data-toggle="modal" data-target="#authorization">выход</a></p>
+                </div>
+            </div><!-- end row-->
+          </div><!-- end container-->
+        </div> 
+      </header>
+
+
+      <div class="middle ">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-3 ">
+              <div class="sidebar">
+
+                <div class="form-register">
+                  <h3>Регистрация нового талона</h3>
+                  <form >
+                    <div class="form-group">
+                      <label>Выберите номер вашего сервиса</label>
+                      <select class="custom-sf">
+                        <option>Регион</option>
+                        <option>Регион 2</option>
+                        <option>Регион 3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="FIO">ФИО клиента</label>
+                      <input type="text" class="form-control" id="FIO">
+                    </div>
+                    <div class="form-group form-group-email">
+                      <label for="email-client">E-mail клиента</label>
+                      <input type="email" class="form-control" id="email-client">
+                    </div>
+                    <div class="form-group">
+                      <label for="year">Год выпуска авто</label>
+                      <input type="text" class="form-control" id="year">
+                    </div>
+                    <div class="form-group">
+                      <label for="auto">Гос. номер авто</label>
+                      <input type="text" class="form-control" id="auto">
+                    </div>
+                    <div class="form-group">
+                      <label for="date">Дата изготовления стекла</label>
+                      <input type="text" class="form-control" id="date">
+                    </div>
+                    <div class="form-group">
+                      <label>Прикрепить документ</label>
+                      <div class="file-wrap"><span>Выбрать файл</span><input type="file" class="form-control" id="file"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="option">Дополнительные опции на стекле</label>
+                      <input type="text" class="form-control" id="option">
+                    </div>
+                    <div class="form-group">
+                      <label for="agc">Код AGC</label>
+                      <input type="text" class="form-control" id="agc">
+                    </div>
+                    <div class="form-group">
+                      <label for="model">Марка и модель автомобиля</label>
+                      <input type="text" class="form-control" id="model">
+                    </div>
+                    <div class="form-group">
+                      <label for="tel-client">Номер телефона клиента</label>
+                      <input type="tel" class="form-control" id="tel-client">
+                    </div>
+
+                    <button type="submit" class="btn-red">Зарегистрировать</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-9">
+
+              <div class="content">
+               
+                  <h1>Перечень талонов</h1>
+                  <div class="client-talon">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="col-1">
+                            № талона
+                          </td>
+
+                          <th class="col-2">
+                            ФИО Клиента
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="td-input">
+                            <form>
+                              <div class="form-group">
+                               <input type="text" class="form-control" id="talon" placeholder="Введите номер талона">
+                             </div>
+                            </form>
+                          </td>
+                          <td class="td-input">
+                            <form>
+                              <div class="form-group">
+                               <input type="text" class="form-control" id="client-name" placeholder="Введите Имя или Фамилию клиента">
+                             </div>
+                            </form>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr class="found">
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                        <tr >
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            256486332
+                          </td>
+                          <td>
+                            Петров Петр Петрович
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            1234569
+                          </td>
+                          <td>
+                            Васильев Федор Николаевич
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="line-one line-g" data-scroll-speed="4"></div>
+                  <div class="line-two line-g" data-scroll-speed="4"></div>
+                  <div class="line-three line-g left-deg" data-scroll-speed="4"></div>
+                  <div class="line-four line-g left-deg" data-scroll-speed="4"></div>
+              </div><!-- end content -->
+            </div>
+
+
+
+          </div>
+        </div><!-- end container -->
+
+      </div><!-- end middle -->
+
+   
+    </div><!-- end wrapper -->
+
+    <footer id="footer">
+        <div class="container"> 
+          <div class="row">
+            <div class="col-xs-4">
+              <a href="#"><img src="i/logo-2.png" alt=""></a>
+              <p class="bp-info-bottom">© Bitstop - 2014<br>
+                Федеральная сеть автостекольных станций.<br>
+                <a href="#" class="link-map">Карта сайта</a>
+              </p>
+            </div>
+            <div class="col-xs-8">
+               <ul class="nav-list-bottom">
+                  <li><a href="#" class="nav-bottom-link">компания</a></li>
+                  <li><a href="#" class="nav-bottom-link">услуги</a></li>
+                  <li><a href="#" class="nav-bottom-link">полезные статьи</a></li>
+                  <li><a href="#" class="nav-bottom-link">адреса центров</a></li>
+              </ul>
+              <p class="order-call-bottom">
+                8-800-333-88-80<br>
+                <a href="#" data-toggle="modal" data-target="#feedback-modal" class="call-link">заказать звонок</a>
+                <a href="#" class="uplab-link"></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      
+    </footer><!-- end footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/placeholder.min.js"></script>
+    <script src="js/SelectBox.js"></script>
+    <script src="js/bitstop.js"></script>
+        <script>
+      // To test the @id toggling on password inputs in browsers that don’t support changing an input’s @type dynamically (e.g. Firefox 3.6 or IE), uncomment this:
+      // $.fn.hide = function() { return this; }
+      // Then uncomment the last rule in the <style> element (in the <head>).
+      $(function() {
+        // Invoke the plugin
+        $('input, textarea').placeholder();
+        // That’s it, really.
+        // Now display a message if the browser supports placeholder natively
+        var html;
+        
+        if (html) {
+          $('<p class="note">' + html + '</p>').insertAfter('form');
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.polygon-img-wrap .wrapper-img:after{
+  display: none;
+
+}
+
+.red-line,
+.line-gray,
+.line-g,
+.gray-line-top,
+.gray-line-bottom{
+	display: none !important;
+}
+
+input,
+select.custom-sf{
+  line-height: normal !important;
+  line-height: 40px\0/ !important; /* for IE 8 */
+
+}

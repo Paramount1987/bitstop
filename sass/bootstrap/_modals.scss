@@ -1,0 +1,194 @@
+
+.modal-open {
+  //overflow: hidden;
+  padding-right: 0 !important;
+}
+
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+  &.fade .modal-dialog {
+    
+    @include transition-transform(0.3s ease-out);
+  }
+  &.in .modal-dialog {  }
+}
+.modal-open .modal {
+  //overflow-x: hidden;
+  //overflow-y: scroll;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: absolute;
+  margin: 10px;
+  width: 370px;
+  left: 50%;
+  margin-left: -185px;
+  z-index: 1060;
+  color: #21242e;
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+  // Fade for backdrop
+  &.fade { @include opacity(0);}
+  &.in { @include opacity(.5); }
+}
+
+.modal-header {
+  padding: 65px 40px 0px 40px;
+  font: normal 24px/24px 'gotham_probold', sans-serif;
+  position: relative;
+  left: -2px;
+  height: 140px;
+  background: url("../i/modal-bg.png") no-repeat 0px 0px;
+}
+// Close icon
+.modal-header .close {
+  margin-top: -2px;
+}
+
+// Title text within header
+.modal-title {
+  margin: 0;
+  padding-left: 5px;
+}
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  position: relative;
+  padding: 0 40px;
+  width: 362px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+// Footer (for actions)
+.modal-footer {
+  padding: 75px 60px 15px 60px;
+  font-size: 12px;
+  text-align: center;
+  height: 140px;
+  position: relative;
+  top: -20px;
+  left: -2px;
+  color: #97979d;
+  background: url("../i/modal-bg.png") no-repeat 0px -136px;
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.close-modal{
+  width: 70px;
+  height: 60px;
+  background: url("../i/close.png") no-repeat center;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  right: 0;
+  top: 15px;
+  z-index: 1;
+}
+
+.btn-red-modal,
+.btn-white-modal {
+  width: 140px;
+  text-align: center;
+  height: 40px;
+  color: #fff;
+  background: #ed1c24;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  z-index: 2;
+  bottom: -55px;
+  left: 50%;
+  margin-left: -70px;
+  @include transition(all linear .3s)
+
+}
+.btn-red-modal:hover{
+  background: darken(#ed1c24, 20%);
+}
+
+.btn-white-modal {
+  background: #fff;
+  width: 165px;
+  color: #21232d;
+  margin-left: -83px;
+}
+
+////////////////////////////////////////////////////////////////////////
+#feedback-garant-modal,
+#authorization {
+  color: #fff;
+}
+
+#feedback-garant-modal .modal-header,
+#authorization .modal-header{
+  background: url("../i/modal-red-bg.png") no-repeat 0px 2px;
+  color: #fff;
+}
+#feedback-garant-modal .modal-body,
+#authorization .modal-body{
+  background: #ed1c24 url("../i/curvice.png") repeat-y;
+  color: #fff;
+}
+#authorization .modal-body p {margin: 0;position: relative;top: -32px;width: 250px;font-size: 15px;}
+
+#feedback-garant-modal .modal-footer,
+#authorization .modal-footer{
+  background: url("../i/modal-red-bg.png") no-repeat 0px -139px;
+}
+
+#feedback-garant-modal select,
+#authorization select{
+  outline: 0;
+  color: #21232d;
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  line-height: 40px;
+}
+
+#feedback-garant-modal .form-control,
+#authorization .form-control{
+  color: #21232d;
+}
+
+#feedback-garant-modal .close-modal,
+#authorization  .close-modal{
+  background: url("../i/close-b.png") no-repeat;
+  top: 5px;
+}

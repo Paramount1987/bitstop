@@ -1,0 +1,201 @@
+
+
+.form-group
+  margin-bottom: 20px
+
+.form-group label
+  display: block
+  font-size: 15px
+  margin-bottom: 3px
+  b
+    color: #ed1c24
+    font-weight: normal
+
+.form-group input
+  width: 100%
+  height: 40px
+  padding: 0 15px
+  font-size: 12px
+  outline: 0
+
+.form-group textarea
+  width: 100%
+  max-width: 100%
+  outline: 0
+  padding: 15px
+  font-size: 12px
+
+.form-group .form-control
+  border: 1px solid #85858a
+  border-color: rgba(0,0,0,.4)
+  -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.33)
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.33)
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.33)
+
+
+.form-group.hide
+  display: none
+////////////////////////////////////////
+.form-register
+  background: #e3e3e5
+  padding: 20px
+  margin-top: 20px
+  padding-bottom: 35px
+  .form-group input
+    height: 35px
+  label
+    font-size: 12px
+    color: #21232d
+  .form-group
+    margin-bottom: 15px  
+  h3
+    font: 24px/30px "gotham_proregular", sans-serif  
+    color: #21232d
+    margin-top: 5px
+    margin-bottom: 30px
+  .custom-sf
+    height: 35px
+    outline: 0   
+    -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,.33)
+    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.33)
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.33)
+    padding: 0 15px
+    font-size: 12px
+  .btn-red
+    width: 100%
+    height: 35px
+    border: 0
+    outline: 0
+    text-transform: uppercase
+    color: #fff
+    text-align: center  
+    background: #ed1c24  
+    font: 10px/12px "gotham_probold", sans-serif 
+    @include transition(all linear .3s)
+    &:hover
+      background: #970c11
+
+.form-register #file
+  display: block !important
+  width: 130px!important
+  height: 20px !important
+  position: absolute
+  top: 0
+  left: -110px
+  z-index: 10
+  cursor: pointer
+  @include opacity(0)
+  overflow: hidden !important
+  padding: 0
+
+.form-register .file-wrap
+  overflow: hidden
+  height: 20px
+  position: relative
+  color: #ed1c24
+  span
+    border-bottom: 1px dotted #ed1c24
+    font-size: 12px
+    display: inline-block
+    max-width: 180px
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+  &:before
+    content: ""
+    display: inline-block
+    width: 17px
+    height: 14px
+    background: url("../i/file.png") no-repeat
+    margin-right: 5px
+    position: relative
+    top: 0
+
+.modal-form-register
+  .form-register
+    background: #fff
+    padding: 0 0 20px 0
+    margin-top: 0
+    position: relative
+  h3
+    margin-top: 0
+    color: #ed1c24
+  .btn-black,
+  .btn-red
+    position: absolute
+    width: 130px
+    height: 35px
+    display: block
+    left: 0
+    z-index: 10
+    font: 10px/12px "gotham_probold", sans-serif 
+    @include transition(all .3s linear)
+  .btn-black
+    left: 150px
+    border: 0
+    outline: 0
+  .btn-red:hover
+    background: #970c11  
+  .modal-footer
+    a
+      color: #21232d
+      text-decoration: underline
+      &:hover
+        text-decoration: none  
+
+//////////////////////////////////////////////////
+.form-talon
+  background: #ed1c24 url("../i/curvice.png") repeat-y
+  padding: 15px
+  color: #fff
+  position: absolute
+  z-index: 10
+  width: 218px
+  top: 63px
+  .form-footer
+    background: url("../i/form-footer.png") repeat-x
+    height: 20px
+    position: absolute
+    bottom: -20px
+    left: 0
+    width: 100%
+  .form-header
+    background: url("../i/form-header.png") repeat-x
+    height: 6px
+    position: absolute
+    top: -6px
+    left: 0
+    width: 100%
+  .form-group 
+    margin-bottom: 8px
+    input
+      height: 30px 
+      color: #515153 
+  .btn-black
+    background: #21242e
+    width: 100%
+    border: 0
+    outline: 0
+    height: 35px
+    font: 10px/12px "gotham_probold", sans-serif 
+  h3
+    font: 18px/22px "gotham_probold", sans-serif 
+    text-transform: uppercase
+    letter-spacing: 3px
+    margin: 10px 0
+  label
+    font-size: 12px 
+
+.form-talon:after
+  content: ""
+  width: 200px
+  height: 15px
+  position: absolute
+  top: 175px
+  left: 10px
+  z-index: -1
+  -webkit-box-shadow: 0px 17px 30px -2px rgba(158, 11, 15, 0.75)
+  box-shadow: 0px 17px 30px -2px rgba(158, 11, 15, 0.75)
+
+
+

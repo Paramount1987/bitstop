@@ -1,0 +1,65 @@
+nav
+  width: 980px
+  margin: auto
+  height: 60px
+  position: relative
+
+.nav-list
+  height: 100%
+  display: inline-block
+  width: 660px
+  text-align: justify
+  &:after
+    content: ''
+    width: 100%
+    display: inline-block
+
+.nav-list li
+  display: inline-block
+  height: 100%
+
+.nav-list li.active
+  border-top: 2px solid #ed1c24
+  border-bottom: 2px solid #ed1c24
+
+.nav-link  
+  color: #fff
+  text-transform: uppercase
+  font: normal 12px/55px 'gotham_problack', sans-serif
+  letter-spacing: 2px
+  @include transition(color linear .3s)
+
+.nav-link:hover  
+  color: #ed1c24
+
+////////////talon
+.talon-link
+  position: absolute
+  z-index: 150
+  top: 0
+  right: 0
+  width: 200px
+  height: 105px
+  background: url('../i/garant.png') no-repeat -6px 0
+  text-transform: uppercase
+  color: #fff
+  font: normal 10px/16px 'gotham_problack', sans-serif
+  text-align: center
+  letter-spacing: 2px
+  padding-top: 17px
+  &:hover
+    background-position: -212px 0px
+    text-shadow: none
+
+.talon-link:after
+  content: ""
+  width: 180px
+  height: 15px
+  position: absolute
+  top: 45px
+  left: 10px
+  z-index: 100  
+  @include box-shadow (0px 17px 30px -2px rgba(158, 11, 15, 0.75)) 
+
+.talon-link:hover:after
+  @include box-shadow (0px 17px 30px -2px rgba(247, 148, 29, 0.75)) 

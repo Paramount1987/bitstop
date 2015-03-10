@@ -1,0 +1,1524 @@
+.middle
+  color: #515153
+  min-width: 1000px
+  overflow: hidden
+
+
+h1
+  color: #21232d
+  font: 45px/45px 'gotham_probold', sans-serif
+  text-transform: uppercase
+  margin: 20px 0 0 0
+  letter-spacing: 2px
+
+
+.logo-link 
+  width: 197px
+  height: 70px
+  display: inline-block
+  background: url("../i/logo.png") 0 0 no-repeat
+//////////////////////////////////////////////////////
+
+.btn-black
+  font: normal 9px/40px 'gotham_prolight', sans-serif
+  text-transform: uppercase
+  letter-spacing: 1px
+  display: inline-block
+  background: #19191e
+  background: rgba(25,25,30,.85)
+  color: #fff
+  text-align: center
+  padding: 0 20px
+  @include transition(all linear .3s)
+  &:hover
+    background: rgba(25,25,30,1)
+//////////////////////////////////////////////////
+.bp-garant
+  padding: 60px 175px 85px 0
+  color: #19191e
+  position: relative
+  z-index: 50
+
+
+.bp-garant  img
+  float: left
+  margin-right: 45px
+
+.bp-garant h4
+  text-transform: uppercase 
+  font: normal 22px/30px 'gotham_probold', sans-serif 
+  letter-spacing: 1px
+
+.bp-garant p
+  font-size: 15px
+  line-height: 25px
+  &:after
+    content: ''
+    display: table
+    clear: both
+
+.polygon-bg
+  position: absolute
+  width: 895px
+  height: 379px
+  top: 0
+  right: 0
+  z-index: -1
+///////////////////////////////////////////////////
+.news-main
+  color: #515153
+  padding-top: 65px
+  h4
+    font-size: 19px
+    color: #19191e
+    letter-spacing: 1px
+    font-weight: 700
+    text-transform: uppercase
+    position: relative
+    z-index: 40
+
+.news-list
+  position: relative
+  z-index: 40
+
+.news-list .news-date
+  display: inline-block
+  border: 3px solid #ed1c24
+  width: 72px
+  height: 72px
+  text-transform: uppercase
+  font-size: 13px
+  font-weight: 500
+  line-height: 20px
+  padding: 12px 4px 0 10px
+
+.news-list li
+  margin-bottom: 12px
+  &:after
+    clear: both
+    content: ''
+    display: table
+
+.news-list .link-news
+  text-decoration: underline
+  display: inline-block
+  width: 220px
+  float: right
+  color: #515153
+  font-size: 16px
+  line-height: 23px
+  &:hover
+    text-decoration: none
+
+////////////////////////////////////////////
+.service-main
+  text-align: center
+  position: relative
+  z-index: 40
+  margin-bottom: 25px
+
+.service-main > p
+  font-size: 16px
+  color: #121213
+
+.service-main .title-service
+  text-transform: uppercase
+  font: normal 30px/50px 'gotham_proregular', sans-serif 
+  letter-spacing: 3px
+  color: #19191e
+  margin-bottom: 25px
+
+.service-main .service-list
+  text-align: center
+  padding-top: 80px
+  li
+    display: inline-block
+    width: 310px
+    padding: 0 30px
+    vertical-align: top
+    &:before
+      content: ''
+      display: block
+      margin: auto
+      width: 85px
+      height: 65px
+      background: url('../i/sprite-service.png') no-repeat  
+
+.service-main .service-list li h4
+  font: normal 25px/25px 'gotham_probold', sans-serif 
+  color: #ed1c24
+
+.service-main .service-list li p
+  color: #515153 
+  font-size: 13px
+
+.service-main .service-list li.second
+  position: relative
+  top: -60px
+
+.service-main .service-list li.second:before
+  background-position: 22px -94px  
+
+.service-main .service-list li.third:before
+  background-position: 17px -187px   
+
+//////////////////////////////////////////////////////////
+.wrapper-company-clients
+  background: url("../i/polygon-2-bg.png") no-repeat center top
+  min-width: 1000px
+  padding-top: 112px
+  padding-bottom: 100px
+
+
+.company-clients
+  text-align: center
+  position: relative
+  margin: auto
+  width: 980px
+  h4
+    font: normal 22px/35px 'gotham_proregular', sans-serif 
+    text-transform: uppercase
+    color: #19191e
+    letter-spacing: 1px
+    padding: 0 110px
+  .company-list
+    margin-top: 65px  
+
+.company-clients .company-list li
+  display: inline-block
+  position: relative
+  margin: 0 10px
+  width: 160px
+  height: 92px
+  a
+    display: block
+    -moz-border-radius: 10px
+    -webkit-border-radius: 10px
+    border-radius: 10px
+    height: 100%
+    position: relative
+    z-index: 2
+  &:hover a
+    @include box-shadow(0px 7px 18px -3px rgba(50, 50, 50, 0.25))
+
+.company-clients .company-list li:hover:after
+  content: ""
+  display: block
+  width: 1px
+  height: 210px
+  background: #e94227
+  position: absolute
+  top: -55px
+  left: 50%
+  z-index: 1
+  @include rotate(40deg)
+
+
+.company-list li .link
+  background: #fff url("../i/partner.png") no-repeat 37px 18px
+
+.company-clients .company-list li:hover .link
+  background-position: 37px -124px  
+////////////////////////////////////////////////////////////////////////
+.about-company
+  text-align: center
+  position: relative
+  padding: 15px 0
+  height: 550px
+  display: table
+  width: 100%
+  background: url('../i/company-bg.jpg') no-repeat center
+
+
+.inner-about-company
+  width: 980px
+  margin: auto
+  color: #d8d8d8
+  display: table-cell
+  vertical-align: middle
+  position: relative
+  z-index: 5
+  h4
+    font: normal 30px/50px 'gotham_proregular', sans-serif 
+    text-transform: uppercase
+    letter-spacing: 4px
+    margin-bottom: 50px
+    margin-top: 14px
+  p
+    width: 640px  
+    margin: 20px auto
+
+///////////////////////////////////////////////////////////////////////
+.work-type 
+  margin-left: -80px
+  margin-bottom: 50px
+  position: relative
+  top: -5px
+  li
+    display: inline-block
+    vertical-align: top
+    width: 255px
+    margin-left: 80px
+    background: #fff
+  li.third
+    padding-left: 30px  
+  a
+    text-transform: uppercase 
+    font: normal 30px/35px 'gotham_probold', sans-serif
+    color: #19191e 
+    position: relative
+    z-index: 40
+    &:hover
+      border-bottom: 1px solid #ec1b23
+      color: #ec1b23
+  p
+    position: relative
+    z-index: 40    
+
+/////////////////////  polygon image  ///////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+/* Chrome, Safari, Opera */
+@-webkit-keyframes tr1
+  0%
+    top: -16px
+    left: 8px
+  25% 
+    top: -18px
+    left: 10px
+  50% 
+    top: -16px
+    left: 8px
+  100%
+    top: -18px
+    left: 10px
+
+/* Standard syntax */
+@keyframes tr1
+  0%
+    top: -16px
+    left: 8px
+  25% 
+    top: -18px
+    left: 10px
+  50% 
+    top: -16px
+    left: 8px
+  100%
+    top: -18px
+    left: 10px
+
+
+////////////////////////////////////////////////////////////
+
+
+.polygon-img-wrap
+  width: 1140px
+  position: relative
+  margin: auto
+  text-align: center
+  padding-top: 45px
+  li
+    display: inline-block
+    position: relative
+  .triangle
+    display: block
+    @include opacity(0)
+    @include transition(all linear .3s)
+    width: 100px
+    height: 75px  
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 50
+    background: url("../i/triangles.png") no-repeat 0 0
+  .triangle-1
+    background-position: -5px -5px
+    top: -18px
+    left: 10px
+  .triangle-2
+    background-position: -16px -138px
+    top: 195px
+    left: 225px 
+  .triangle-3
+    background-position: -303px -125px
+    left: 50px
+    top: -2px
+  .triangle-4
+    background-position: -199px -225px
+    top: 169px  
+    left: 6px
+  .triangle-5
+    background-position: -16px -229px
+    top: 204px  
+    left: 205px
+  .triangle-6
+    background-position: -135px -18px
+    top: 20px  
+    left: 255px
+  .triangle-7
+    background-position: -268px -18px
+    top: 212px  
+    left: 0px
+  .triangle-8
+    background-position: -164px -125px
+    top: 188px  
+    left: 255px
+
+
+
+
+.polygon-img-wrap .year-garant
+  position: absolute
+  display: block
+  width: 120px
+  height: 125px
+  z-index: 50
+  right: 52px
+  top: -10px
+  background: url("../i/year-garant-new.png") no-repeat 0px 0px
+
+.polygon-img-wrap .picture
+  z-index: 15
+  position: absolute
+  top: -9999px
+  bottom: -9999px
+  left: -9999px
+  right: -9999px
+  margin: auto
+  -webkit-filter: contrast(1.4)
+  -moz-filter: contrast(1.4)
+  -o-filter: contrast(1.4)
+  -ms-filter: contrast(1.4)
+  filter: contrast(1.4)
+
+.polygon-img-wrap .mask-polygon
+  display: block
+  position: absolute
+  left: 11px
+  top: 12px
+  z-index: 16
+  width: 398px
+  height: 255px
+  background: #000
+  @include opacity(.6)
+  &:hover
+    background: none
+
+.polygon-img-wrap .wrapper-img
+  width: 385px
+  height: 296px
+  position: relative
+  overflow: hidden
+  z-index: 25
+  display: block
+  &:before
+    content: "" 
+    width: 100%
+    height: 100%
+    background: url("../i/polygon-img-sprite.png") 100% 100%
+    background-position: 0 0
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    z-index: 20
+  &:after  
+    content: url("../i/polygon-3d.png") 
+    position: absolute
+    left: 25px
+    top: 12px
+    z-index: 27
+    width: 348px
+    height: 252px
+    -webkit-filter: contrast(1.7)
+    -moz-filter: contrast(1.7)
+    -o-filter: contrast(1.7)
+    -ms-filter: contrast(1.7)
+    filter: contrast(1.7)
+    @include opacity(.3)
+    
+
+.polygon-img-wrap li.third .wrapper-img
+  width: 357px
+  height: 289px
+
+.polygon-img-wrap .second .wrapper-img    
+  &:before
+    background: url("../i/polygon-img-sprite-2.png") 100% 100%
+    background-position: 0 0
+  &:after  
+    content: url("../i/polygon-3d-2.png")
+    left: 19px
+    top: 12px
+
+.polygon-img-wrap li.first
+  right: 13px
+  .wrapper-img:before
+    height: 97%
+
+.polygon-img-wrap li.third
+  left: 6px
+  .mask-polygon
+    top: 10px
+
+.polygon-img-wrap .third .wrapper-img   
+  &:before
+    background: url("../i/polygon-img-sprite-3.png") 100% 100%
+    background-position: 0 0
+  &:after  
+    content: url("../i/polygon-3d-3.png")
+    left: 8px
+    top: 7px
+
+
+.polygon-img-wrap li:hover .wrapper-img,
+.polygon-img-wrap li.hover .wrapper-img
+  .mask-polygon
+    @include opacity(0)
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0)
+  &:after
+    content: ""
+  .picture
+    -webkit-filter: contrast(1)
+    -moz-filter: contrast(1)
+    -o-filter: contrast(1)
+    -ms-filter: contrast(1)
+    filter: contrast(1)
+  &~.triangle    
+    @include opacity(1)
+   
+
+.polygon-img-wrap li.first:hover .wrapper-img:before,
+.polygon-img-wrap li.first.hover .wrapper-img:before
+  background: url("../i/polygon-img-sprite.png") 100% 100% no-repeat
+  background-position: 0 -286px
+
+.polygon-img-wrap li.second:hover .wrapper-img:before,
+.polygon-img-wrap li.second.hover .wrapper-img:before
+  background: url("../i/polygon-img-sprite-2.png") 100% 100% no-repeat
+  background-position: 0 -300px
+
+.polygon-img-wrap li.second:hover,
+.polygon-img-wrap li.second.hover
+  .year-garant
+    background-position: 0px -180px
+
+.polygon-img-wrap li.third:hover .wrapper-img:before,
+.polygon-img-wrap li.third.hover .wrapper-img:before
+  background: url("../i/polygon-img-sprite-3.png") 100% 100% no-repeat
+  background-position: 0 -289px
+
+
+//.gray-line-top,
+.gray-line-bottom
+  position: absolute
+  z-index: 40
+  top: -84px
+  left: 182px
+  width: 1px
+  height: 100px
+  background: #dadadd
+  -webkit-transform: rotate(-21deg)
+  -ms-transform: rotate(-21deg)
+  -o-transform: rotate(-21deg)
+  transform: rotate(-21deg)
+
+.gray-line-bottom
+  height: 670px
+  left: 406px
+  top: 480px
+
+
+
+.service-page .polygon-img-wrap .wrapper-img
+  &:after
+    content: none
+
+.service-page .polygon-img-wrap 
+  .mask-polygon
+    display: none
+  .picture
+    -webkit-filter: contrast(1)
+    -moz-filter: contrast(1)
+    -o-filter: contrast(1)
+    -ms-filter: contrast(1)
+    filter: contrast(1)
+  .gray-line-bottom
+    display: none  
+
+
+@media (max-width: 1024px)
+  .polygon-img-wrap
+    left: -75px
+
+////////////////////////////////////////////////////////////////////
+
+.line-gray
+  position: absolute
+  z-index: 1
+  top: 50px
+  left: 18px
+  width: 1px
+  height: 900px
+  background: #dadadd
+  -webkit-transform: rotate(21deg)
+  -ms-transform: rotate(21deg)
+  -o-transform: rotate(21deg)
+  transform: rotate(21deg)
+
+.line-gray-2
+  left: 110px
+  top: 0px
+  z-index: 29
+  height: 930px
+
+.line-gray-3
+  top: 340px
+  left: 363px
+  height: 950px
+  z-index: -1
+  -webkit-transform: rotate(-21deg)
+  -ms-transform: rotate(-21deg)
+  -o-transform: rotate(-21deg)
+  transform: rotate(-21deg)
+////////////////////////////////////////////////////////////////////////
+.polygon-bg-red
+  background: url('../i/garant-polygon.png') top center no-repeat
+  height: 390px
+
+
+.garant-extented
+  position: relative
+  text-transform: uppercase
+  padding: 70px 170px 0 270px
+  color: #fff
+  font: normal 23px/35px 'gotham_proregular', sans-serif 
+  letter-spacing: 2px
+  b
+    font: normal 23px/30px 'gotham_probold', sans-serif 
+  .link
+    color: #fff
+    border-bottom: 1px solid #fff
+    letter-spacing: 0
+    font: normal 28px/30px 'gotham_probold', sans-serif   
+    &:hover
+      border-bottom: 0
+
+.garant-extented:before
+  content: ''
+  position: absolute
+  display: block
+  width: 118px
+  height: 156px
+  background: url("../i/sprite-garant.png") 0 -190px no-repeat
+  top: 60px
+  left: 105px
+
+/////////////////////////////////////
+.sertifikat-list 
+  margin-top: 35px
+  margin-left: -65px
+  li
+    display: inline-block
+    margin-left: 25px
+    margin-bottom: 15px
+    vertical-align: top
+
+////////////////////////////////////////////////////////////////////////
+.repair-list 
+  li
+    display: inline-block
+    vertical-align: top
+    width: 250px
+    padding-right: 20px
+    font-weight: 500
+    font-size: 15px
+    color: #21232d
+    &:before
+      content: ""
+      display: block
+      height: 83px
+      margin-bottom: 20px
+      background: url("../i/sprite-repair.png") no-repeat
+
+.repair-list li.second:before
+  background-position: 0 -112px
+
+.repair-list li.first:before
+  background-position: 0 -230px
+////////////////////////////////////////////////////////////////////////
+
+.process-repair-list
+  list-style-type: decimal
+  padding: 0
+  margin: 50px 0 0 -40px 
+
+.process-repair-list li 
+  display: inline-block
+  position: relative
+  counter-increment: mega-step
+  width: 44%
+  margin-left: 40px
+  vertical-align: top
+  margin-bottom: 40px
+  p
+    color: #272b32
+    font: normal 12px/18px 'Ubuntu', sans-serif 
+
+
+.process-repair-list li:before
+  content: counter(mega-step, decimal)
+  color: #ed1c24
+  font: normal 103px/0px 'gotham_probold', sans-serif
+  position: absolute
+  top: 34px
+  left: -42px
+////////////////////////////////////////////////////////////////////////
+.polygon-red-min
+  width: 840px
+  height: 340px
+  background: url("../i/form-polygon.png") no-repeat center center
+
+.form-request
+  position: relative
+  left: -60px  
+  color: #fff
+  padding: 70px 20px 50px 60px
+  margin-bottom: -90px
+  ul li
+    display: inline-block
+    vertical-align: top
+    width: 215px
+    margin-left: 25px
+  li.first
+    font: 21px/29px 'gotham_proregular', sans-serif   
+  li.second
+    font-weight: 500
+    font-size: 15px
+    padding-top: 10px
+    span
+      font: normal 22px/25px "gotham_probold", sans-serif 
+    a
+      font: normal 11px/17px "gotham_proregular", sans-serif 
+      color: #fff
+      border-bottom: 1px dotted #fff 
+      &:hover
+        border-bottom: 1px solid #fff
+    &:before
+      content: ""
+      display: block
+      width: 45px
+      height: 45px
+      margin-bottom: 20px
+      background: url("../i/sprite-form.png") no-repeat top left  
+  li.third
+    font-weight: 500
+    font-size: 15px
+    padding-top: 10px
+    a
+      text-transform: uppercase
+      color: #fff
+      display: block
+      width: 150px
+      text-align: center
+      background: #282b32
+      margin-top: 18px
+      font: normal 10px/25px "gotham_proregular", sans-serif 
+    &:before
+      content: ""
+      display: block
+      width: 45px
+      height: 45px
+      margin-bottom: 20px
+      background: url("../i/sprite-form.png") no-repeat top left 
+      background-position: 0 -87px
+
+.form-request  li.third     
+  a:hover
+    background: #000  
+////////////////////////////////////////////////////////////////////////
+.knowledge-wrap
+  background: #f1f1f2
+  padding: 30px 0 70px 0
+  .inner
+    width: 980px
+    margin: 0 auto
+    padding: 0 155px
+    h2
+      color: #353b43
+      font: normal 35px/50px "gotham_probold", sans-serif 
+      padding-left: 40px
+
+
+
+.knowledge-list
+  margin-top: 50px
+  margin-bottom: 40px
+  li
+    margin-bottom: 30px
+    &:after
+      content: ""
+      display: table
+      clear: both
+  .img-wrap
+    float: left
+    display: inline-block
+    height: 130px
+    width: 190px
+    overflow: hidden   
+    float: left 
+    margin-right: 40px
+    img
+      width: auto
+      max-width: none
+  a
+    color: #21232d
+    font-size: 19px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    &:hover
+      text-decoration: underline
+  
+
+.knowledge-list-articles
+  margin-bottom: 90px
+  li
+    margin-bottom: 20px
+  .img-wrap
+    width: 140px
+    height: 100px
+    margin-right: 30px
+  a
+    text-transform: none
+    font-weight: 400
+////////////////////////////////////////////////////////////////////////
+.btn-white
+  display: inline-block
+  border: 2px solid #97979e
+  text-transform: uppercase
+  padding: 0 20px
+  color: #55555d
+  font: normal 10px/30px "gotham_proregular", sans-serif 
+  margin-left: 40px
+  letter-spacing: 1px
+  @include transition(all linear .2s)
+  &:hover
+    background: #97979e
+    color: #fff
+
+
+////////////////////////////////////////////////////////////////////////
+.partners-wrap
+  margin: 55px 0
+
+.partners-table
+  width: 100%
+  margin: 30px 0
+  img
+    display: inline-block
+    padding: 0
+  p
+    margin: 0  
+    b
+      color: #000
+  td
+    vertical-align: middle
+  td.first
+    width: 155px
+    height: 90px
+    border: 1px solid #d7d7d7 
+    text-align: center
+    background: #fff
+  td.second
+    width: 75px
+    text-align: center  
+    i
+      display: inline-block
+      width: 25px
+      height: 2px
+      background: #bdbdc3
+////////////////////////////////////////////////////////////////////////
+.news-page-list
+  margin: 55px 0 55px -40px
+  li
+    margin-bottom: 30px
+
+.news-page-list div
+  display: inline-block
+  vertical-align: top
+
+.news-page-list .img-news
+  width: 250px  
+  overflow: hidden
+  img
+    @include transition(all linear .3s)
+  img:hover
+    @include scale(1.1)
+
+.news-page-list .news-date  
+  border: 3px solid #ed1c24
+  width: 72px
+  height: 72px
+  text-transform: uppercase
+  font-size: 13px
+  font-weight: 500
+  line-height: 20px
+  padding: 12px 4px 0 10px
+  margin: 0 20px
+
+.news-page-list .news-body
+  width: 440px
+  a
+    text-transform: uppercase
+    font-weight: 700
+    color: #21232d
+    font-size: 19px
+    line-height: 23px
+    margin: 0
+    &:hover
+      text-decoration: underline
+////////////////////////////////////////////////////////////////////////
+.priority-list
+  margin-bottom: 60px
+  h4
+    margin-bottom: 20px
+  p
+    font-weight: 500
+    color: #272b32
+  li
+    position: relative
+    padding-left: 90px  
+
+.priority-list li:before
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  width: 80px
+  height: 60px
+  background: url("../i/sprite-service.png") no-repeat top left
+  background-size: cover
+
+.priority-list li.second:before
+  background-position: 15px -75px
+
+.priority-list li.third:before
+  background-position: 5px -150px
+////////////////////////////////////////////////////////////////////////
+.geography-map
+  position: relative
+  .map-img
+    max-width: none
+    margin-left: -80px
+
+.icon-link
+  position: absolute
+  width: 19px
+  height: 19px
+  z-index: 10
+  left: 0
+  top: 150px
+  background: url("../i/icons-map.png") no-repeat  
+  @include transition(all linear .2s)
+  &:hover
+    @include scale(1.2)
+
+
+.icon-link[data-number="1"]
+  top: 207px
+  left: 20px
+
+.icon-link[data-number="2"]
+  top: 207px
+  left: 45px
+
+.icon-link[data-number="3"]
+  top: 224px
+  left: 24px
+
+.icon-link[data-number="4"]
+  top: 219px
+  left: 35px
+
+.icon-link[data-number="5"]
+  top: 218px
+  left: 142px
+
+.icon-link[data-number="6"]
+  top: 175px
+  left: 152px
+
+.icon-link[data-number="7"]
+  top: 165px
+  left: 172px
+
+.icon-link[data-number="8"]
+  top: 214px
+  left: 160px
+
+.icon-link[data-number="9"]
+  top: 210px
+  left: 130px
+
+.icon-link[data-number="10"]
+  top: 235px
+  left: 94px
+
+.icon-link[data-number="11"]
+  top: 208px
+  left: 83px
+
+.icon-link[data-number="12"]
+  top: 198px
+  left: 93px
+
+.icon-link[data-number="13"]
+  top: 182px
+  left: 60px
+
+.icon-link[data-number="14"]
+  top: 190px
+  left: 50px
+
+.icon-link[data-number="15"]
+  top: 202px
+  left: 79px
+
+.icon-link[data-number="16"]
+  top: 178px
+  left: 79px
+
+.icon-link[data-number="17"]
+  top: 193px
+  left: 80px
+
+.icon-link[data-number="18"]
+  top: 193px
+  left: 69px
+
+.icon-link[data-number="19"]
+  top: 170px
+  left: 60px
+
+.icon-link[data-number="20"]
+  top: 143px
+  left: 0px
+
+.icon-link[data-number="21"]
+  top: 125px
+  left: 80px
+
+.icon-link[data-number="22"]
+  top: 135px
+  left: 60px
+
+.icon-link[data-number="23"]
+  top: 180px
+  left: -20px
+
+.icon-link[data-number="24"]
+  top: 270px
+  left: 25px
+
+.icon-link[data-number="25"]
+  top: 315px
+  left: 0px
+
+.icon-link[data-number="26"]
+  top: 330px
+  left: -40px
+
+.icon-link[data-number="27"]
+  top: 285px
+  left: 0px
+
+.icon-link[data-number="28"]
+  top: 224px
+  left: 4px
+
+.icon-link[data-number="29"]
+  top: 218px
+  left: -30px
+
+.icon-link[data-number="30"]
+  top: 244px
+  left: -19px
+
+.icon-link[data-number="31"]
+  top: 232px
+  left: -20px
+
+.icon-link[data-number="32"]
+  top: 290px
+  left: -80px
+
+.icon-link[data-number="33"]
+  top: 281px
+  left: -67px
+
+.icon-link[data-number="34"]
+  top: 268px
+  left: -47px
+
+.icon-link[data-number="35"]
+  top: 262px
+  left: -57px
+
+.icon-link[data-number="36"]
+  top: 257px
+  left: -43px
+
+.icon-link[data-number="37"]
+  top: 260px
+  left: -2px
+
+.icon-link[data-number="38"]
+  top: 270px
+  left: -12px
+
+.icon-link[data-number="39"]
+  top: 258px
+  left: -12px
+
+.icon-link[data-number="40"]
+  top: 300px
+  left: 125px
+
+.icon-link[data-number="41"]
+  top: 290px
+  left: 165px
+
+.icon-link[data-number="42"]
+  top: 290px
+  left: 140px
+
+.icon-link[data-number="43"]
+  top: 260px
+  left: 215px
+
+.icon-link[data-number="44"]
+  top: 255px
+  left: 235px
+
+.icon-link[data-number="45"]
+  top: 285px
+  left: 185px
+
+.icon-link[data-number="46"]
+  top: 267px
+  left: 106px
+
+.icon-link[data-number="47"]
+  top: 255px
+  left: 117px
+
+.icon-link[data-number="48"]
+  top: 254px
+  left: 137px
+
+.icon-link[data-number="49"]
+  top: 270px
+  left: 145px
+
+.icon-link[data-number="50"]
+  top: 270px
+  left: 155px
+
+.icon-link[data-number="51"]
+  top: 335px
+  left: 305px
+
+.icon-link[data-number="52"]
+  top: 355px
+  left: 345px
+
+.icon-link[data-number="53"]
+  top: 65px
+  left: 135px
+
+.icon-link[data-number="54"]
+  top: 120px
+  left: 110px
+////////////////////////////////////////////////////////////////////////
+.service-info
+  color: #fff
+  padding: 50px 165px 0 140px
+  width: 980px
+  margin: 40px 0 0 -190px
+  a
+    color: #fff
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+  h4
+    font: 25px/25px "gotham_probold", sans-serif
+    color: #fff  
+////////////////////////////////////////////////////////////////////////
+.list-city 
+  margin: 100px 0 100px -130px
+
+.list-city > li
+  display: inline-block
+  vertical-align: top
+  margin-left: 130px
+  font: 15px/22px "gotham_proregular", sans-serif
+  color: #7b7b83
+  margin-bottom: 20px
+
+.list-city > li > div
+  display: inline-block
+  vertical-align: top
+  h4
+    margin-top: 0
+    font-size: 18px
+    line-height: 22px
+    margin-bottom: 20px
+    color: #21232d
+    font: 500 19px/22px "Ubuntu", sans-serif
+  span
+    display: block 
+  img
+    display: block
+    width: 100% \9
+    max-width: 100%
+    height: auto   
+
+.list-city .city-img
+  width: 140px
+  margin-right: 30px
+
+.list-city .city-body
+  width: 230px
+  li
+    margin-bottom: 10px
+    padding-left: 40px
+    position: relative
+    a
+      color: #7b7b83
+      font: 12px/15px "Ubuntu", sans-serif
+      border-bottom: 1px dashed #ed1c24
+      @include transition(all linear .2s)
+      &:hover
+        color: #ed1c24
+
+
+.list-city .city-body li:before
+  content: ""
+  display: block
+  position: absolute
+  width: 22px
+  height: 22px
+  top: -3px
+  left: 0
+  background: url("../i/sprite-address.png") no-repeat top left
+
+.list-city .city-body li.second:before
+  background-position: 0 -59px
+////////////////////////////////////////////////////////////////////////
+.choice-city
+  margin: 50px 0
+  font-size: 16px
+  .city-link
+    color: #353b43
+    border-bottom: 1px dashed #ed1c24
+    font: 30px/30px "gotham_proregular", sans-serif
+    display: inline-block
+    margin-left: 10px
+
+////////////////////////////////////////////////////////////////////////
+.nav-address
+  width: 1000px
+  margin: 0 auto
+  li
+    display: inline-block
+    position: relative
+    width: 160px
+    text-align: center
+    background: url("../i/sprite-nav.png") no-repeat top left
+    height: 75px
+    span
+      color: #595f71
+      cursor: pointer
+      position: relative
+      z-index: 12
+      display: block
+      text-decoration: none
+      font: 22px/75px "gotham_proregular", sans-serif
+
+
+.nav-address .map-nav
+  background-position: -242px 3px
+  z-index: 10
+
+.nav-address .city-nav
+  z-index: 5
+  left: -20px
+  top: 3px
+
+.nav-address .city-nav
+  background-position: 0px -127px
+
+
+.nav-address .city-nav.active
+  background-position: 0px 1px
+  span
+    color: #e3e3e5
+
+.nav-address .map-nav.active
+  background-position: -242px -130px
+  span
+    color: #e3e3e5
+
+.nav-address-wrap
+  position: relative
+  z-index: 2
+  min-width: 1000px
+
+.nav-address-wrap:after
+  content: ""
+  position: absolute
+  display: block
+  width: 100%
+  left: 0
+  height: 60px
+  top: 46px
+  background: url("../i/line-bg-address.png") no-repeat center 0px
+
+
+.nav-address-wrap.city-active:after
+  z-index: 10
+  background: url("../i/line-bg-address.png") no-repeat center -239px
+
+
+#list-city 
+  width: 1000px
+  margin: 0 auto
+  padding: 25px 10px  0 10px
+////////////////////////////////////////////////////////////////////////
+.line-g
+  position: absolute
+  top: 0
+  left: 0
+  width: 1px
+  height: 1000px
+  background: #dadadd
+  z-index: -1
+  -webkit-transform: rotate(21deg)
+  -ms-transform: rotate(21deg)
+  -o-transform: rotate(21deg)
+  transform: rotate(21deg)
+
+.line-three,
+.line-four
+  -webkit-transform: rotate(-21deg)
+  -ms-transform: rotate(-21deg)
+  -o-transform: rotate(-21deg)
+  transform: rotate(-21deg)
+
+.line-one
+  top: 300px
+  left: -150px 
+
+.line-one.line-step
+  top: 280px
+  left: 20px
+
+.line-two
+  left: 595px
+  top: 90px
+
+.line-two.line-step
+  left: 740px
+  top: 120px
+
+.line-three
+  left: 140px
+  top: -50px
+
+.line-three.line-step
+  left: 320px
+
+.line-four
+  left: 810px
+  top: 500px
+
+.line-four.line-step
+  left: 980px
+  top: 530px
+
+
+.service-page .work-type li
+  background: transparent
+
+.service-page .line-one.line-step
+  top: 200px
+
+.service-page .line-two.line-step
+  top: 10px
+
+.service-page .line-three.line-step
+  top: 80px
+  left: 350px
+
+.service-page .line-four.line-step
+  top: 450px
+////////////////////////////////////////////////////////////////////////
+#map
+  height: 600px
+  position: relative
+
+.tab-content
+  margin-top: -25px
+  position: relative
+  z-index: 1
+
+
+.tab-content > .tab-pane
+  display: none  
+
+.tab-content > .active
+  display: block
+  -webkit-animation-name: fadeIn
+  -webkit-animation-duration: .5s
+  animation-name: fadeIn
+  animation-duration: .5s
+
+@-webkit-keyframes fadeIn 
+  0% 
+    opacity: 0
+  20%
+    opacity: 0
+  40%
+    opacity: 0.3
+  60%
+    opacity: 0.5
+  80% 
+    opacity: 0.9
+  100%
+    opacity: 1
+
+@keyframes fadeIn 
+  0% 
+    opacity: 0
+  20%
+    opacity: 0
+  40%
+    opacity: 0.3
+  60%
+    opacity: 0.5
+  80% 
+    opacity: 0.9
+  100%
+    opacity: 1
+
+////////////////////////////////////////////////////////////////////////
+.workers-wrap .sidebar
+  padding-left: 5px
+  padding-top: 190px
+
+.workers-wrap .header-inner
+  padding: 10px 0 0 0
+  .logo-link 
+    padding-left: 15px
+    padding-bottom: 10px
+    width: 170px
+    height: 50px
+    background-size: contain
+
+.workers-wrap
+  header
+    padding-bottom: 10px
+  h1  
+    font: 30px/35px "gotham_proregular", sans-serif
+    text-transform: none
+    letter-spacing: 0
+    margin-bottom: 20px
+
+.client-talon
+  table
+    width: 100% 
+    text-align: left
+    font: 11px/12px "gotham_proregular", sans-serif
+    td,
+    th
+      padding: 15px 20px
+    thead
+      background: #bdbdc3
+    .col-1
+      width: 28%
+    .col-2
+      width: 72%  
+    th
+      font: 15px/15px "gotham_proregular", sans-serif  
+    tbody
+      background: #fff  
+
+.client-talon .form-group
+  margin-bottom: 0
+  input
+    height: 30px
+    padding: 0 10px
+    font: 11px/12px "gotham_proregular", sans-serif
+
+.client-talon table .odd
+  background: #f1f1f2
+
+.client-talon table .found
+  background: #ed1c24
+  color: #fff
+
+.client-talon table .td-input
+  background:  #e3e3e5 !important
+////////////////////////////////////////////////////////////////////////
+.user-in
+  color: #55555d
+  font: 12px/15px "gotham_proregular", sans-serif 
+  text-transform: uppercase
+  letter-spacing: 2px
+  margin: 0
+  height: 57px
+  a
+    color: #fff
+    background: #669bf2
+    height: 100%
+    padding: 15px 10px 0 10px
+    position: relative
+    display: inline-block
+
+////////////////////////////////////////////////////////////////////////
+.city-popover
+  display: none
+  font: 10px/20px "Ubuntu", sans-serif
+  letter-spacing: 1px
+  color: #272b32
+  padding: 0 7px
+  position: absolute
+  background: #fff
+  height: 20px
+  text-transform: uppercase
+
+.city-popover.show
+  display: block
+  z-index: 50
+
+.city-popover:after 
+  right: 100%
+  top: 50%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  pointer-events: none
+  border-color: rgba(255, 255, 255, 0)
+  border-right-color: #ffffff
+  border-width: 5px
+  margin-top: -5px
+
+
+/////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////////////////////////

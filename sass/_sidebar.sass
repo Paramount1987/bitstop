@@ -1,0 +1,36 @@
+.sidebar
+  margin: 55px -10px
+  padding-left: 10px
+
+.list-sidebar .link,  
+.list-sidebar a
+  color: #7b7b83
+  font: normal 15px/18px 'gotham_proregular', sans-serif
+  letter-spacing: 0.25px
+
+.list-sidebar > li
+  margin: 12px 0
+
+.list-sidebar .link:hover
+  border-bottom: 1px solid #c7c8cb
+
+.list-sidebar li .link.active
+  font: normal 15px/18px 'gotham_probold', sans-serif
+  color: #000
+  border-bottom: 1px solid #c7c8cb
+
+.list-sidebar li ul
+  display: none
+
+.list-sidebar li.open
+  ul
+    display: block
+
+.list-sidebar li ul a
+  font: normal 11px/12px 'gotham_proregular', sans-serif
+  text-decoration: underline
+  line-height: 14px
+  display: inline-block
+  margin-top: 7px
+  &:hover
+    text-decoration: none
